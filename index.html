@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="/src/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Моє Резюме</h1>
+        <p>Andrii Andriyev</p>
+        <p>Work, work and work!</p>
+    </header>
+
+    <nav>
+        <button id="theme-toggle">Змінити тему</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2 id="experience-header" class="collapsible">Досвід роботи</h2>
+            <div id="experience-content" class="content">
+                <p><b>Посада:</b> Junior C# Developer</p>
+                <p><b>Компанія:</b> XYZ Solutions</p>
+                <p><b>Період:</b> 2020 - 2023</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="education-header" class="collapsible">Освіта</h2>
+            <div id="education-content" class="content">
+                <p><b>Університет:</b> ХНУРЕ</p>
+                <p><b>Факультет:</b> Інформаційні технології</p>
+                <p><b>Рік закінчення:</b> 2027</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Навички</h2>
+            <ul class="skills">
+                <li>C#</li>
+                <li>MSSQL</li>
+                <li>AWS</li>
+                <li>ASP.NET</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Контакти</h2>
+            <p>Email: <a href="mailto:youremail@example.com" class="button">Написати листа</a></p>
+            <p>Телефон: <a href="tel:+380000000000" class="button">Подзвонити</a></p>
+        </section>
+
+        <section>
+            <h2>Форма зворотного зв’язку</h2>
+            <form id="feedback-form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Надіслати</button>
+            </form>
+            <div id="feedback-result"></div>
+        </section>
+    </main>
+
+
+</body>
+</html>
